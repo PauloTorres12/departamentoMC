@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DepartamentoMC</title>
+    <link rel="icon" type="image/x-icon"
+        href="/favicon/pngtree-minimalist-black-and-white-nature-landscape-illustration-png-image_14027782-removebg-preview.png">
+    <meta name="description"
+        content="Descubre este increíble departamento con vistas espectaculares y ubicación privilegiada.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">DepartamentoMC</a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Vive las vacaciones de tu vida</h1>
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn-outline">Ver Fotos</a>
+                <a href="#contacto" class="btn-primary">Agendar Visita</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <img src="imagenes/puente-resi.jpg" alt="foto-rio" class="hero-bg">
+    </header>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería</h2>
+                <p>Conoce nuestro departamento.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item item-1">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop"
+                        alt="Sala de estar">
+                </div>
+                <div class="gallery-item item-2">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop"
+                        alt="Habitación principal">
+                </div>
+                <div class="gallery-item item-3">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop"
+                        alt="Cocina moderna">
+                </div>
+                <div class="gallery-item item-4">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+                        alt="Baño de lujo">
+                </div>
+                <div class="gallery-item item-5">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+                        alt="Terraza con vista">
+                </div>
+            </div>
+
+            <!-- Video -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <!-- video de ejemplo para reemplazar posteriormente -->
+                    <video controls autoplay muted loop>
+                        <source src="videos/video-depto.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caracteristicas -->
+    <section id="caracteristicas" class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Características</h2>
+                <p>Todo lo que te ofrecemos</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-ruler-combined"></i>
+                    <h3>120 m²</h3>
+                    <p>Comedor/cocina, terraza, dormitorio y balcón.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>1 Dormitorio</h3>
+                    <p>Amplio para 3 personas</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bath"></i>
+                    <h3>1 Baño</h3>
+                    <p>Acabados de primera calidad.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Estacionamiento</h3>
+                    <p>Garaje privado con techo.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Áreas Comunes</h3>
+                    <p>Asador, patio y quincho.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Conectividad</h3>
+                    <p>Wifi mediante fibra óptica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="section location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ubicación</h2>
+                <p>¿Donde nos encontramos?</p>
+            </div>
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.5234036733314!2d-65.00012636102896!3d-31.73036848466449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d25df42666241%3A0x2672fbd73fc3f1a2!2sOlmos%20Sur%202572%2C%20X5889%20Mina%20Clavero%2C%20C%C3%B3rdoba!5e1!3m2!1ses-419!2sar!4v1765902329680!5m2!1ses-419!2sar"
+                        width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-details">
+                    <h3>¿Qué tienes cerca?</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-water"></i>4 Cuadras de la playa central</li>
+                        <li><i class="fa-solid fa-cash-register"></i> 5 cuadras del casino</li>
+                        <li><i class="fa-solid fa-bag-shopping"></i> 5 Cuadras del centro </li>
+                        <li><i class="fa-solid fa-house"></i> Accesos rápidos al domicilio </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>¿Te interesa?</h2>
+                <p>Contáctanos para agendar una visita o recibir más información. No dejes pasar esta oportunidad única.
+                </p>
+                <div class="contact-methods">
+                    <div class="method">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>3544 61-8498 | Liliana</span>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>3544 46-5397 | Edgardo</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://w.app/dtcojw" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/deptomc/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email | Para responder tu mensaje</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required
+                        placeholder="Hola, me gustaría visitar el departamento..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; DepartamentoMC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
