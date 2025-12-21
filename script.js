@@ -155,6 +155,7 @@ function updateLightboxContent() {
         const video = document.createElement('video');
         video.controls = true;
         video.autoplay = true;
+        video.playsInline = true; // Prevent fullscreen on mobile
         video.style.maxWidth = '100%';
         video.style.maxHeight = '80vh';
         const source = document.createElement('source');

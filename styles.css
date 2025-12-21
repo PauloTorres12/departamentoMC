@@ -576,6 +576,15 @@ img {
 
     .social-links {
         justify-content: center;
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+        /* Smaller logo for mobile */
+        width: auto;
     }
 }
 
@@ -605,9 +614,11 @@ img {
     width: 100%;
     display: block;
 }
+
 /* Lightbox Styles */
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -641,7 +652,7 @@ img {
     max-height: 80vh;
     object-fit: contain;
     border-radius: 5px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
 }
 
 .close-btn {
@@ -699,15 +710,22 @@ img {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
     .lightbox-content {
         max-width: 95%;
     }
-    .prev-btn, .next-btn {
+
+    .prev-btn,
+    .next-btn {
         padding: 10px;
         font-size: 20px;
     }
