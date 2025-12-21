@@ -74,12 +74,12 @@ if (contactForm) {
         })
             .then(response => response.json())
             .then(data => {
-                alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                showCustomAlert('¡Gracias por tu mensaje! Te contactaremos pronto.');
                 contactForm.reset();
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctanos por WhatsApp.');
+                showCustomAlert('Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctanos por WhatsApp.');
             })
             .finally(() => {
                 submitButton.textContent = originalButtonText;
@@ -193,3 +193,23 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') nextSlide();
     if (e.key === 'ArrowLeft') prevSlide();
 });
+
+// Custom Alert Modal Function
+function showCustomAlert(message) {
+    const modal = document.getElementById('message-modal');
+    const msgElement = document.getElementById('modal-message');
+    const okBtn = document.getElementById('modal-ok-btn');
+
+    if (modal && msgElement && okBtn) {
+        msgElement.textContent = message;
+        modal.classList.add('active');
+
+        // Close on button click
+        okBtn.onclick = function () {
+            modal.classList.remove('active');
+        };
+    } else {
+        // Fallback if modal elements are missing
+        alert(message);
+    }
+}
