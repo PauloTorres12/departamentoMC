@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DepartamentoMC</title>
-    <link rel="icon" type="image/x-icon"
-        href="/favicon/pngtree-minimalist-black-and-white-nature-landscape-illustration-png-image_14027782-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="/favicon/imagen-ico.ico">
     <meta name="description"
         content="Descubre este increíble departamento con vistas espectaculares y ubicación privilegiada.">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +22,9 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">DepartamentoMC</a>
+            <a href="#" class="logo">
+                <img src="/imagenes/logo.1.png" alt="logo-mina-clavero">
+            </a>
             <button class="menu-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </button>
@@ -60,24 +60,19 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item item-1">
-                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop"
-                        alt="Sala de estar">
+                    <img src="/imagenes/casa.jpg" alt="Foto de casa">
                 </div>
                 <div class="gallery-item item-2">
-                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop"
-                        alt="Habitación principal">
+                    <img src="/imagenes/baño.jpg" alt="Baño">
                 </div>
                 <div class="gallery-item item-3">
-                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop"
-                        alt="Cocina moderna">
+                    <img src="/imagenes/comedor.jpg" alt="Comedor">
                 </div>
                 <div class="gallery-item item-4">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
-                        alt="Baño de lujo">
+                    <img src="/imagenes/garage.jpg" alt="Garage">
                 </div>
                 <div class="gallery-item item-5">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
-                        alt="Terraza con vista">
+                    <img src="/imagenes/pieza.jpg" alt="pieza">
                 </div>
             </div>
 
@@ -180,10 +175,9 @@
                         <span>3544 46-5397 | Edgardo</span>
                     </div>
                     <div class="social-links">
-                        <a href="https://w.app/dtcojw" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <p>¡Conoce nuestro instagram!</p>
                         <a href="https://www.instagram.com/deptomc/" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
@@ -216,6 +210,15 @@
             <p>&copy; DepartamentoMC. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+        </div>
+        <button class="next-btn">&#10095;</button>
+    </div>
 
     <script src="script.js"></script>
 </body>

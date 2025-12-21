@@ -127,10 +127,14 @@ img {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 10rem;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -344,6 +348,11 @@ img {
     color: var(--accent-color);
     width: 40px;
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.location-details ul li i:hover {
+    transform: scale(1.2);
 }
 
 .contact-container {
@@ -386,6 +395,11 @@ img {
     margin-top: 30px;
     display: flex;
     gap: 15px;
+    align-items: center;
+}
+
+.social-links p {
+    margin-bottom: 0;
 }
 
 .social-links a {
@@ -538,7 +552,6 @@ img {
         padding: 20px;
     }
 
-    /* Center align location and contact info */
     .location-details {
         text-align: center;
         align-items: center;
@@ -591,4 +604,111 @@ img {
 .video-wrapper video {
     width: 100%;
     display: block;
+}
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content img,
+.lightbox-content video {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2001;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    z-index: 2001;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--accent-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+    }
+    .prev-btn, .next-btn {
+        padding: 10px;
+        font-size: 20px;
+    }
 }
