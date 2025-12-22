@@ -36,16 +36,6 @@ Este proyecto ha sido construido utilizando tecnologías web estándar, sin depe
     *   [Google Fonts](https://fonts.google.com/): Fuentes tipográficas (Outfit y Playfair Display).
     *   [FormSubmit](https://formsubmit.co/): Backend-as-a-service para el envío del formulario de contacto.
 
-## 📦 Instalación y Uso
-
-Dado que es un sitio estático, no requiere instalación de dependencias ni procesos de compilación complejos.
-
-1.  **Clonar o descargar** el repositorio.
-2.  Abrir el archivo `index.html` en cualquier navegador web moderno.
-3.  ¡Listo! El sitio debería visualizarse correctamente.
-
-Para desarrollo local, se recomienda utilizar un servidor local (como "Live Server" en VS Code) para asegurar que la carga de recursos (como imágenes y scripts) funcione sin bloqueos de seguridad del navegador.
-
 ## 📄 Estructura de Archivos
 
 *   `index.html`: Archivo principal con la estructura del sitio.
