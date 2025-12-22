@@ -1,6 +1,8 @@
 # DepartamentoMC
 
-Este proyecto es una página de aterrizaje (Landing Page) diseñada para promocionar y gestionar el alquiler de un departamento vacacional ubicado en **Mina Clavero, Córdoba, Argentina**.
+Este proyecto es una Landing Page diseñada para promocionar y gestionar el alquiler de un departamento vacacional ubicado en Mina Clavero, Córdoba, Argentina.
+
+El link para visualizarla es: https://departamentomc.netlify.app/
 
 El objetivo principal del sitio es mostrar las instalaciones, características y ubicación del departamento, así como facilitar el contacto directo con los dueños a través de un formulario web y enlaces a redes sociales.
 
