@@ -355,11 +355,14 @@ img {
     width: 40px;
     font-size: 1.5rem;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .location-details ul li i:hover {
     transform: scale(1.2);
 }
+
+
 
 .contact-container {
     display: grid;
