@@ -602,6 +602,32 @@ img {
     }
 }
 
+
+/* Inscripción Section */
+#inscripcion {
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+#inscripcion .section-header {
+    margin-bottom: 15px;
+}
+
+.inscription-content {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.inscription-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.inscription-btn-icon {
+    margin-right: 8px;
+}
+
 /* Video Section Styles */
 .video-container {
     margin-top: 50px;
