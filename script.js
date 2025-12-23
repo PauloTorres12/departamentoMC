@@ -61,7 +61,7 @@ if (contactForm) {
             message: message,
             _subject: `alquiler ${name}`,
             _template: 'table', // Hace que el correo se vea ordenado
-            _captcha: 'false'   // Desactiva captcha para facilitar el envío (opcional)
+            _captcha: 'false'
         };
 
         fetch('https://formsubmit.co/ajax/departamentoaldipau@gmail.com', {
@@ -155,7 +155,7 @@ function updateLightboxContent() {
         const video = document.createElement('video');
         video.controls = true;
         video.autoplay = true;
-        video.playsInline = true; // Prevent fullscreen on mobile
+        video.playsInline = true;
         video.style.maxWidth = '100%';
         video.style.maxHeight = '80vh';
         const source = document.createElement('source');
@@ -194,7 +194,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') prevSlide();
 });
 
-// Custom Alert Modal Function
+
 function showCustomAlert(message) {
     const modal = document.getElementById('message-modal');
     const msgElement = document.getElementById('modal-message');
@@ -204,12 +204,63 @@ function showCustomAlert(message) {
         msgElement.textContent = message;
         modal.classList.add('active');
 
-        // Close on button click
+
         okBtn.onclick = function () {
             modal.classList.remove('active');
         };
     } else {
-        // Fallback if modal elements are missing
         alert(message);
+    }
+}
+const videoPlayer = document.getElementById('video-player');
+if (videoPlayer) {
+    // Responsive Poster Logic
+    function updatePoster() {
+        if (window.innerWidth <= 768) {
+            videoPlayer.poster = "imagenes/foto-ingreso.png";
+        } else {
+            videoPlayer.poster = "imagenes/cartel-mina.jpg";
+        }
+    }
+
+    // Initial check and listener for resize
+    updatePoster();
+    window.addEventListener('resize', updatePoster);
+
+    videoPlayer.addEventListener('click', function () {
+        if (this.paused) {
+            this.play();
+            enterFullscreen(this);
+        }
+    });
+
+    videoPlayer.addEventListener('play', function () {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            enterFullscreen(this);
+        }
+    });
+
+    // Fullscreen exit handler
+    function onFullscreenChange() {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            // Exited fullscreen
+            videoPlayer.pause();
+            videoPlayer.load(); // Resets video to show poster
+        }
+    }
+
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+    document.addEventListener('mozfullscreenchange', onFullscreenChange);
+    document.addEventListener('MSFullscreenChange', onFullscreenChange);
+
+    function enterFullscreen(element) {
+        if (element.requestFullscreen) {
+            element.requestFullscreen().catch(err => console.log('Fullscreen blocked:', err));
+        } else if (element.webkitRequestFullscreen) { /* Safari */
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) { /* IE11 */
+            element.msRequestFullscreen();
+        }
     }
 }

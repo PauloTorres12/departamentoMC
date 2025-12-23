@@ -630,7 +630,7 @@ img {
 
 /* Video Section Styles */
 .video-container {
-    margin-top: 50px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -643,7 +643,8 @@ img {
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 100%;
+    /* Previously 800px */
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
@@ -652,6 +653,9 @@ img {
 
 .video-wrapper video {
     width: 100%;
+    height: 650px;
+    object-fit: cover;
+    cursor: pointer;
     display: block;
 }
 
