@@ -602,7 +602,7 @@ img {
     }
 
     .video-wrapper video {
-        height: 400px;
+        height: 370px;
         object-fit: cover;
     }
 }
