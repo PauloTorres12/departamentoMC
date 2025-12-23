@@ -600,6 +600,11 @@ img {
         /* Smaller logo for mobile */
         width: auto;
     }
+
+    .video-wrapper video {
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 
