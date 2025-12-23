@@ -217,7 +217,7 @@ if (videoPlayer) {
     // Responsive Poster Logic
     function updatePoster() {
         if (window.innerWidth <= 768) {
-            videoPlayer.poster = "imagenes/foto-ingreso.png";
+            videoPlayer.poster = "imagenes/cartel-ingreso1.png";
         } else {
             videoPlayer.poster = "imagenes/cartel-mina.jpg";
         }
